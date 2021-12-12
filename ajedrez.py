@@ -34,7 +34,14 @@ while True:
 # Hacemos el movimiento en el tablero
 tablero[fila_destino-1][columna_destino-1]=tablero[fila_origen-1][columna_origen-1]=''
 movimientos+=1
+f=open(nombre_fichero,'a')
+#Añadimos una cadena con el nombre de movimientos
+f.write('Movimiento'+str(movimientos+ '\n'))
 
+for i in tablero:
+    f.write('\t'.join(i)+'\n')
+    f.close()
+    
 
 
     
