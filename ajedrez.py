@@ -6,6 +6,7 @@ tableros=f.read().split('\n')
 
 for i in tableros[n*9,n*9+8]:
     print(i)
+
 return
 
    
