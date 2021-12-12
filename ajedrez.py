@@ -26,6 +26,15 @@ while True:
     if continuar != ('si'):
         break
     else:
-          
+        fila_origen=int(input('Introduce la fila de la pieza a mover'))
+        columna_origen=int(input('Introduce la columna de la pieza a mover'))
+        fila_destino=int(input('Introduce la fila de destino'))
+        columna_destino=int(input('Introduce la columna de destino'))
+
+# Hacemos el movimiento en el tablero
+tablero[fila_destino-1][columna_destino-1]=tablero[fila_origen-1][columna_origen-1]=''
+movimientos+=1
+
+
 
     
