@@ -30,18 +30,30 @@ while True:
         columna_origen=int(input('Introduce la columna de la pieza a mover'))
         fila_destino=int(input('Introduce la fila de destino'))
         columna_destino=int(input('Introduce la columna de destino'))
-
-# Hacemos el movimiento en el tablero
-tablero[fila_destino-1][columna_destino-1]=tablero[fila_origen-1][columna_origen-1]=''
-movimientos+=1
-f=open(nombre_fichero,'a')
-#Añadimos una cadena con el nombre de movimientos
-f.write('Movimiento'+str(movimientos+ '\n'))
-
-for i in tablero:
-    f.write('\t'.join(i)+'\n')
-    f.close()
+        # Hacemos el movimiento en el tablero
+        tablero[fila_destino-1][columna_destino-1]=tablero[fila_origen-1][columna_origen-1]=''
+        movimientos+=1
+        f=open(nombre_fichero,'a')
+        #Añadimos una cadena con el nombre de movimientos
+        f.write('Movimiento'+str(movimientos+ '\n'))
     
+    for i in tablero:
+     f.write('\t'.join(i)+'\n')
+    f.close
 
+return    
+
+partida_ajedrez('partida1.txt')
+
+def tablero(nombre_fichero,n):
+    'Función que muestra por pantalla el tablero n de una partida de ajedrez'
+
+f=open(nombre_fichero,'r')
+tableros=f.read().split('\n')
+
+for i in tableros[n*9,n*9+8]:
+    print(i)
+return
+tablero('partida1.txt', 2)    
 
     
