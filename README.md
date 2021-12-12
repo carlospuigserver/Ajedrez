@@ -16,6 +16,8 @@ El diagrama de flujo relacionado con el programa es el siguiente:
 
 
 
+<img width="955" alt="Ajedrez" src="https://user-images.githubusercontent.com/91721643/145732359-69a48404-7d1f-4186-82f2-1d53c20249a3.png">
+
 
 
 Aquí dejo el link de figma por si la imagen no se ve correctamente: https://www.figma.com/file/NjVB7L57g8y8Aff5p3FdoO/Untitled?node-id=0%3A1
